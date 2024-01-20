@@ -1,2 +1,2 @@
 # Rroact.github.io
-깃블로
+깃블로그
