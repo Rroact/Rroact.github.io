@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+table {
+  margin-top: 50px;
+  width: 60%;
+}
+caption {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+td {
+  border: 1px solid black;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  max-width: 5px;
+}
+.block-height-20 {
+  height: 20px;
+}
+.block-height-60 {
+  height: 60px;
+}
+.block-height-80 {
+  height: 80px;
+}
+
+.block-maxWidth-5 {
+  max-width: 5px;
+}
+.block-maxWidth-10 {
+  max-width: 10px;
+}
+.block-maxWidth-20 {
+  max-width: 20px;
+}
+
+.block-width-20 {
+  width: 20px;
+}
