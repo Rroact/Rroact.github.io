@@ -8,6 +8,21 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      .newsTH {
+        text-align: center;
+        font-size: 17px;
+      }
+      .newsTR {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 15px;
+        color: black;
+        background-color: white;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -42,7 +57,7 @@
             </li>
             <li>
               <a href="#news" id="contact-link"
-                ><span class="icon solid fa-envelope">Test</span></a
+                ><span class="icon solid fa-envelope">News</span></a
               >
             </li>
           </ul>
@@ -187,14 +202,53 @@
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- News -->
       <section id="news" class="four">
         <div class="container">
           <header>
-            <h2>Contact</h2>
+            <h2>News</h2>
           </header>
-
-          <a href="/page/NewsPaper/form.html">test</a>
+          <table width="100%" class="table01">
+            <colgroup>
+              <col width="40%" />
+              <col width="25%" />
+              <col width="10%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th
+                  style="border-right: 1px solid rgb(232, 237, 236)"
+                  class="newsTH"
+                >
+                  제목
+                </th>
+                <th
+                  class="newsTH"
+                  style="border-right: 1px solid rgb(232, 237, 236)"
+                >
+                  파일명
+                </th>
+                <th class="newsTH">작성일</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- 뉴스 수업 작성시 복사하여 추가하기 시작 -->
+              <tr
+                style="height: auto; cursor: pointer"
+                onclick="moveToNewsDetail(this)"
+              >
+                <td style="border-right: 1px solid black" class="newsTR">
+                  하늘 위에서도 끊김 없는 머스크 위성…韓통신사는 빠졌다 왜
+                  [팩플]
+                </td>
+                <td style="border-right: 1px solid black" class="newsTR">
+                  satellite
+                </td>
+                <td class="newsTR">2024/01/11</td>
+              </tr>
+              <!--  뉴스 수업 작성시 복사하여 추가하기 종료 -->
+            </tbody>
+          </table>
         </div>
       </section>
     </div>
@@ -216,5 +270,14 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      function moveToNewsDetail(element) {
+        console.log(element);
+        const childElements = element.children;
+        const title = childElements[1].innerText;
+        const date = childElements[2].innerText.split("/");
+        window.location.href = `./page/newsPaper/${date[0]}/${date[1]}/${title}.html`;
+      }
+    </script>
   </body>
 </html>
