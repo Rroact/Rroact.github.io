@@ -233,16 +233,15 @@
             </thead>
             <tbody id="tbody">
               <!-- 뉴스 수업 작성시 복사하여 추가하기 시작 -->
-              <tr
-                style="height: auto; cursor: pointer"
-                onclick="moveToNewsDetail(this)"
-              >
+              <tr style="height: auto; cursor: pointer">
                 <td style="border-right: 1px solid black" class="newsTR">
                   하늘 위에서도 끊김 없는 머스크 위성…韓통신사는 빠졌다 왜
                   [팩플]
                 </td>
                 <td style="border-right: 1px solid black" class="newsTR">
-                  satelite
+                  <a href="page/newsPaper/2024/01/satelite/index.html">
+                    satelite
+                  </a>
                 </td>
                 <td class="newsTR">2024/01/11</td>
               </tr>
@@ -275,8 +274,9 @@
         const childElements = element.children;
         const title = childElements[1].innerText;
         const date = childElements[2].innerText.split("/");
-        window.location.href = `/page/newsPaper/${date[0]}/${date[1]}/${title}/index.html`;
+        window.location.href = `page/newsPaper/${date[0]}/${date[1]}/${title}/index.html`;
       }
+      $(document).ready(function () {});
     </script>
   </body>
 </html>
