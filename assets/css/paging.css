@@ -1,0 +1,16 @@
+.paging {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tablepage {
+  width: auto;
+}
+
+.paging_btn {
+  margin: 0 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}

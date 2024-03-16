@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table width="100%" class="table01">
+      <colgroup>
+        <col width="40%" />
+        <col width="25%" />
+        <col width="10%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th style="border-right: 1px solid rgb(232, 237, 236)" class="newsTH">
+            제목
+          </th>
+          <th class="newsTH" style="border-right: 1px solid rgb(232, 237, 236)">
+            파일명
+          </th>
+          <th class="newsTH">작성일</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <!-- 뉴스 수업 작성시 복사하여 추가하기 시작 -->
+        <tr
+          style="height: auto; cursor: pointer"
+          onclick="moveToNewsDetail(this)"
+        >
+          <td style="border-right: 1px solid black" class="newsTR">
+            111111111
+          </td>
+          <td style="border-right: 1px solid black" class="newsTR">satelite</td>
+          <td class="newsTR">2024/01/11</td>
+        </tr>
+        <!--  뉴스 수업 작성시 복사하여 추가하기 종료 -->
+      </tbody>
+    </table>
+  </body>
+</html>
