@@ -258,7 +258,6 @@
       <!-- Copyright -->
       <ul class="copyright">
         <li>&copy; Untitled. All rights reserved.</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </div>
 
@@ -276,7 +275,7 @@
         const childElements = element.children;
         const title = childElements[1].innerText;
         const date = childElements[2].innerText.split("/");
-        window.location.href = `./page/newsPaper/${date[0]}/${date[1]}/${title}/${title}.html`;
+        window.location.href = `/page/newsPaper/${date[0]}/${date[1]}/${title}/${title}.html`;
       }
     </script>
   </body>
